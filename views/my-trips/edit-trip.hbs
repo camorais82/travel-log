@@ -1,0 +1,14 @@
+<h1>Editing {{ trip.destination }}</h1>
+<form action="/edit-trip?tripID={{trip._id}}" method="POST">
+  <label for="">Destination:</label>
+  <input type="text" name="destination" value="{{trip.destination}}">
+  <label for="">City:</label>
+  <input type="text" name="city" value="{{trip.city}}">
+  <label for="">People:</label>
+  <input type="text" name="people" value="{{trip.people}}">
+  <label for="">Route:</label>
+  <input type="text" name="route" value="{{trip.route}}">
+  <label for="">Days:</label>
+  <input type="number" name="days" value="{{trip.days}}">
+  <button class="btn btn-warning" type="submit">EDIT</button>
+</form>

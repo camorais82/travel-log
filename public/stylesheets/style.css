@@ -1,0 +1,132 @@
+body {
+  padding: 0px;
+  font-family: "Gelasio", serif;
+  background-image: linear-gradient(rgba(10, 10, 10, 0.5), rgba(0, 0, 0, 0)), url("../images/travel-airplane-cofee.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  text-align: center;
+  color: #ddecfc;
+}
+.img-logo {
+  width: 70px;
+  height: 70px;
+}
+a {
+  color: #00b7ff;
+}
+.plan {
+  font-size: 50px;
+  width: 200px;
+  height: 100px;
+}
+#form {
+  margin: 30px auto;
+  width: 380px;
+  padding-top: 80px;
+}
+#form label {
+  color: #ddecfc;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+#form input,
+#form button {
+  box-sizing: border-box;
+  font-size: 14px;
+  outline: 0;
+  padding: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#form button {
+  background: #43a3e6;
+  border: 1px solid #43a3e6;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s ease background;
+  width: 100%;
+}
+#form button:hover {
+  background: #fff;
+  color: #43a3e6;
+  transition: 0.3s ease background;
+}
+.error-message {
+  background: #f02b63;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
+}
+.containerHome {
+  width: 50%;
+  max-width: 300px;
+}
+.image {
+  display: block;
+  width: 350px;
+  height: 200px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 350px;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.containerHome:hover .overlay {
+  opacity: 1;
+}
+.homecol {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.mab {
+  margin-bottom: 50px;
+}
+.hometitle {
+  color: #ddecfc;
+}
+.account-message {
+  font-size: 20px;
+  color: #000;
+}
+.danger {
+  color: white;
+  width: 70px;
+  height: 35px;
+  text-align: center;
+}
+.edit {
+  color: white;
+  width: 70px;
+  height: 35px;
+}
+.navbar {
+  background-color: transparent;
+}
+.nav-link {
+  font-size: 20px;
+}

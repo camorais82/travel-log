@@ -1,0 +1,51 @@
+<h1>TRIPS</h1>
+<div class="container">
+  <div class="row">
+    {{#each trips}}
+    <div class="col">
+
+      <div class="card" style="width: 15rem;">
+        <img style="height: 10rem;" src="{{imgPath}}" class="card-img-top" alt="...">
+        <div class="card-body">
+
+          <h5 class="card-title"><a class="btn btn-info" href="/info-trip/{{this._id}}">{{this.destination}} </a></h5>
+          <p class="card-text">{{this.city}}</p>
+
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{this.route}}</li>
+          <li class="list-group-item">{{this.days}} days</li>
+
+        </ul>
+        <div class="card-body">
+
+          <form method="GET" action="/my-trips/{{this._id}}/delete">
+           <a class="btn edit btn-warning" href="/edit-trip?tripID={{this._id}}">Edit</a>
+              <button class="btn danger btn-danger" type="submit">Del</button>
+          </form>
+
+
+        </div>
+      </div>
+      <br>
+      <br>
+
+    </div>
+
+    {{/each}}
+<div class="col">
+        <div class="card" style="width: 15rem;">
+          <img style="height: 10rem"
+            src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="centerh3">Next Destination</h3>
+            <div class="card-body d-flex justify-content-center">
+              <a class="btn btn-light plan" href="/planning">+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
