@@ -1,17 +1,25 @@
 <h1>PLANNING YOUR TRIP</h1>
-
- <form action="/planning" method="POST" enctype="multipart/form-data">
-  <label for="">Destination:</label>
-  <input type="text" name="destination">
-  <label for="">City:</label>
-  <input type="text" name="city">
-  <label for="">People:</label>
-  <input type="text" name="people">
-  <label for="">Route:</label>
-  <input type="text" name="route">
-  <label for="">Days:</label>
-  <input type="number" name="days">
-  <label for="">Image:</label>
-  <input type="file" name="photo">
-  <input type="submit" value="Plan your new Trip">
-</form>
+<div class="container">
+  <form action="/planning" method="POST" enctype="multipart/form-data" class="planning-form">
+    <label style="color: #ddecfc; font-size: 20px " for="">Destination:</label>
+    <input type="text" name="destination">
+    <br>
+    <label style="color: #ddecfc; font-size: 20px " for="">City:</label>
+    <input type="text" name="city">
+    <br>
+    <label style="color: #ddecfc; font-size: 20px " for="">People:</label>
+    <input type="text" name="people">
+    <br>
+    <label style="color: #ddecfc; font-size: 20px " for="">Route:</label>
+    <input type="text" name="route">
+    <br>
+    <label style="color: #ddecfc; font-size: 20px " for="">Days:</label>
+    <input type="number" name="days">
+    <br>
+    <br>
+    <label style="color: #ddecfc; font-size: 20px " for="">Image:</label>
+    <input class="btn btn-info" type="file" name="photo">
+    <br>
+    <input class="btn btn-info" type="submit" value="Plan your new Trip">
+  </form>
+</div>

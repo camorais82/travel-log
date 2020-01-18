@@ -1,9 +1,19 @@
-<h1>{{trip.destination}}</h1>
-
-{{#each trip}}
-<p>{{destination}}</p>
-<p>{{city}}</p>
-<p>{{people}}</p>
-<p>{{days}}</p>
-<img src="{{imgPath}}" alt="">
-{{/each}}
+<h1>My memories from
+  <br>
+  <span class="titleInfo">{{trip.destination}}</span>
+</h1>
+<div class="container d-flex justify-content-center">
+  <div class="row">
+    <div class="col">
+      <div class="card mb-3 infoBack" style="width: 700px">
+        <img style="width: 700px" class="card-img-top" src="{{trip.imgPath}}" alt="Card image cap">
+        <div class="card-body text-center">
+          <h3 class="card-title infoCard"> {{trip.destination}}</h3>
+          <p class="card-text infoCard">City: {{trip.city}}</p>
+          <p class="card-text infoCard">Crew: {{trip.people}}</p>
+          <p class="card-text infoCard">Number of Days: {{trip.days}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

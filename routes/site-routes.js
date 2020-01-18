@@ -7,20 +7,23 @@ const checkLogin = require("../controllers/check-login");
 //-----------------HOME-------------//
 
 router.get("/", (req, res, next) => {
-  res.render("home");
+  let user = req.session.currentUser;
+  res.render("home", { user });
 });
 
 //-----------------MY TRIPS-------------//
 
 router.get("/my-trips", checkLogin, (req, res, next) => {
   Trips.find().then(allTrips => {
-    res.render("my-trips/my-trips", { trips: allTrips });
+    let user = req.session.currentUser;
+    res.render("my-trips/my-trips", { trips: allTrips, user });
   });
 });
 
 //-----------------PLANNING - CREATE-------------//
 
 router.get("/planning", checkLogin, (req, res, next) => {
+  let user = req.session.currentUser;
   res.render("my-trips/planning");
 });
 
